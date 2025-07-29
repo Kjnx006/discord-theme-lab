@@ -1,0 +1,94 @@
+:root {
+  --dracula-background: #282a36;
+  --dracula-current-line: #44475a !important;
+  --dracula-selection: #44475a !important;
+  --dracula-foreground: #f8f8f2 !important;
+  --dracula-comment: #6272a4 !important;
+  --dracula-cyan: #8be9fd !important;
+  --dracula-green: #50fa7b !important;
+  --dracula-orange: #ffb86c !important;
+  --dracula-pink: #ff79c6 !important;
+  --dracula-purple: #bd93f9 !important;
+  --dracula-red: #ff5555 !important;
+  --dracula-yellow: #f1fa8c !important;
+  --dracula-line-highlight: #44475a75 !important;
+  --dracula-non-text: #ffffff1a !important;
+  --dracula-white: #ffffff !important;
+  --dracula-tab-drop-background: #44475a70 !important;
+  --dracula-background-lighter: #424450;
+  --dracula-background-alt: #343746 !important;
+
+  --activity-card-background: var(--dracula-background) !important;
+  --background-accent: var(--dracula-current-line) !important;
+  --background-floating: var(--dracula-background) !important;
+  --background-mobile-primary: var(--dracula-background) !important;
+  --background-mobile-secondary: var(--dracula-background-lighter) !important;
+  --background-modifier-selected: var(--dracula-current-line) !important;
+  --background-primary: var(--dracula-background) !important;
+  --home-background: var(--dracula-background-alt) !important;
+  --background-secondary-alt: var(--dracula-background) !important;
+  --background-secondary: var(--dracula-background-lighter) !important;
+  --background-tertiary: var(--dracula-background-alt) !important;
+  --channeltextarea-background: var(--dracula-selection) !important;
+  --header-primary: var(--dracula-foreground) !important;
+  --interactive-muted: var(--dracula-comment) !important;
+  --interactive-normal: var(--dracula-foreground) !important;
+  --rs-dnd-color: var(--dracula-red) !important;
+  --rs-idle-color: var(--dracula-orange) !important;
+  --rs-invisible-color: var(--dracula-comment) !important;
+  --rs-offline-color: var(--dracula-selection) !important;
+  --rs-online-color: var(--dracula-green) !important;
+  --rs-streaming-color: var(--dracula-purple) !important;
+  --scrollbar-auto-scrollbar-color-thumb: var(--dracula-comment) !important;
+  --scrollbar-auto-scrollbar-color-track: var(
+    --dracula-background-alt
+  ) !important;
+    --scrollbar-auto-thumb: var(--dracula-comment) !important;
+  --scrollbar-auto-track: var(--dracula-background-alt) !important;
+  --scrollbar-thin-thumb: var(--dracula-comment) !important;
+}
+
+
+ body {
+  background-color: var(--dracula-background);
+  color: var(--dracula-foreground);
+  font-family: "Inter", sans-serif;
+} 
+
+[class*="container"],
+[class*="wrapper"],
+[class*="content"] {
+  background-color: var(--dracula-background-alt) !important;
+  color: var(--dracula-foreground) !important;
+}
+
+[class*="header"] {
+  background-color: var(--dracula-background) !important;
+  color: var(--dracula-foreground) !important;
+}
+
+textarea,
+input[type="text"],
+button {
+  background-color: var(--dracula-current-line) !important;
+  color: var(--dracula-foreground) !important;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dracula-comment);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--dracula-background-alt);
+}
+
+[class*="wrapper"] {
+  z-index: 1 !important;
+  background: transparent !important;
+   pointer-events: none !important;
+}
+[class*="guildIcon"] {
+  z-index: 10 !important;
+}
