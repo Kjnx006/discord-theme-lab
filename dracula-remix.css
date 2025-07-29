@@ -1,3 +1,11 @@
+/**
+ * @name Dracula Remix
+ * @author Kjnx006
+ * @version 1.0.0
+ * @description Custom Dracula theme remix for BetterDiscord
+ * @source https://github.com/Kjnx006/discord-theme-lab
+ */
+
 :root {
   --dracula-background: #282a36;
   --dracula-current-line: #44475a !important;
@@ -49,11 +57,16 @@
 }
 
 
- body {
-  background-color: var(--dracula-background);
-  color: var(--dracula-foreground);
+body, html {
+  background-color: var(--dracula-background) !important;
+  color: var(--dracula-foreground) !important;
   font-family: "Inter", sans-serif;
-} 
+}
+
+.appMount-3lHmkl {
+  background-color: var(--dracula-background-alt) !important;
+}
+
 
 [class*="container"],
 [class*="wrapper"],
