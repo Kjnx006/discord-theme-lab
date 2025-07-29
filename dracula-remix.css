@@ -7,7 +7,7 @@
  */
 
 :root {
-  --dracula-background: #282a36;
+  --dracula-background: #282a36 !important;
   --dracula-current-line: #44475a !important;
   --dracula-selection: #44475a !important;
   --dracula-foreground: #f8f8f2 !important;
@@ -25,6 +25,15 @@
   --dracula-tab-drop-background: #44475a70 !important;
   --dracula-background-lighter: #424450;
   --dracula-background-alt: #343746 !important;
+    --accent-primary: #8be9fd;
+  --accent-secondary: #50fa7b;
+  --background: #1e1f29;
+  --surface: #282a36;
+  --text-normal: #f8f8f2;
+  --text-muted: #6272a4;
+  --error: #ff5555;
+  --warning: #f1fa8c;
+  --success: #50fa7b;
 
   --activity-card-background: var(--dracula-background) !important;
   --background-accent: var(--dracula-current-line) !important;
@@ -97,6 +106,11 @@ button {
   background-color: var(--dracula-background-alt);
 }
 
+.command-item:hover {
+  background-color: var(--accent-primary);
+  color: var(--background);
+}
+
 [class*="wrapper"] {
   z-index: 1 !important;
   background: transparent !important;
@@ -105,3 +119,29 @@ button {
 [class*="guildIcon"] {
   z-index: 10 !important;
 }
+
+.scroller-3X7KbA::-webkit-scrollbar {
+  width: 6px;
+}
+.scroller-3X7KbA::-webkit-scrollbar-thumb {
+  background-color: var(--dracula-comment);
+  border-radius: 3px;
+}
+
+.button-3, .primaryButton {
+  background-color: var(--accent-primary) !important;
+  color: var(--background) !important;
+  border-radius: 4px;
+}
+
+.container-1, .profile-box {
+  background-color: var(--surface);
+  color: var(--text-normal);
+  border: 1px solid var(--accent-secondary);
+}
+
+.command-list {
+  color: var(--text-muted);
+}
+
+
